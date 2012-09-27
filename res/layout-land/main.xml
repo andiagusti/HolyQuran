@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFF5A5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearFlags"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linearFlagsAz"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgFlagAz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/az" />
+
+                <TextView
+                    android:id="@+id/textAz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Azərbaycanca"
+                    android:textColor="#5E2716" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearFlagsRu"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgFlagRu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ru" />
+
+                <TextView
+                    android:id="@+id/textRu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="В русском"
+                    android:textColor="#5E2716" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkSaveLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Yadda saxla / Запомни"
+            android:textColor="#5E2716" />
+    </LinearLayout>
+
+</LinearLayout>

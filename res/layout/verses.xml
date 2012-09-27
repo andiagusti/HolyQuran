@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_gradient"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtSurahName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah name"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btnSearchSurah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/green_gradient_rounded"
+            android:textColor="#ffffff"
+            android:layout_margin="1dp"
+            android:text="Axtar" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listVerses"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

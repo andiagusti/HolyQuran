@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="42dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearBar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/green_gradient"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surah name, #"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtAztext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+				<!--  
+                <Button
+                    android:id="@+id/btnNotes"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/brown_gradient_rounded"
+                    android:text="Qeydler" />
+
+                <Button
+                    android:id="@+id/btnMark"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/brown_gradient_rounded"
+                    android:text="Nisanla" />
+
+                <Button
+                    android:id="@+id/btnShare"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/brown_gradient_rounded"
+                    android:text="Paylas" /> -->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeNav"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearNavigation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/btnPrev"
+                style="@style/ButtonText"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/green_gradient"
+                android:layout_margin="0dp"
+                android:text="Evvelki Aye" />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/ButtonText"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:background="@drawable/green_gradient"
+                android:text="Novbeti aye" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

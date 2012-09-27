@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/linearBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_gradient" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qurani Kərim surələri"
+                android:padding="4dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:id="@+id/btnSearchQuran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Axtar"
+                android:background="@drawable/green_gradient_rounded"
+                android:textColor="#ffffff"
+                android:layout_margin="1dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listSurahs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeDownAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </RelativeLayout>
+
+</FrameLayout>

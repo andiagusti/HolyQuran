@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFF5A5" >
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" Surah name, #"
+        android:background="@drawable/brown_gradient_rounded" />
+
+    <EditText
+        android:id="@+id/editNote"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.18"
+        android:background="#FFF5A5"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:padding="6dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF5A5" >
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_solid_rounded"
+            android:text="Saxla" />
+
+        <Button
+            android:id="@+id/btnDiscard"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_solid_rounded"
+            android:text="Ləğv et" />
+
+    </LinearLayout>
+
+</LinearLayout>

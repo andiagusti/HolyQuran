@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFF5A5"
+        android:gravity="center_vertical"
+        android:minHeight="360dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnReadQuran"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_solid_rounded"
+            android:text="read" />
+
+        <Button
+            android:id="@+id/btnNotes"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_solid_rounded"
+            android:text="notes" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_solid_rounded"
+            android:text="settings" />
+    </LinearLayout>
+
+</LinearLayout>

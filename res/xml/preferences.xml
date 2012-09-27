@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Interfeys dili" >
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/listDiller"
+            android:entryValues="@array/listDillerVal"
+            android:key="lang"
+            android:summary="Proqram menyusunun dili"
+            android:title="Interfeys dili" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="save_lang"
+            android:summary="Dil secimi yadda saxlanilsinmi?"
+            android:title="Yadda saxla" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Tercume dili" >
+        <ListPreference
+            android:defaultValue="14"
+            android:entries="@array/listTercumeler"
+            android:entryValues="@array/listTercumelerVal"
+            android:key="trans"
+            android:summary="Quran tercumelerinden birini secin"
+            android:title="Tercume dili" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="save_trans"
+            android:summary="Tercume secimi yadda saxlanilsinmi?"
+            android:title="Yadda saxla" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
