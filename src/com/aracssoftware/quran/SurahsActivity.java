@@ -60,7 +60,7 @@ public class SurahsActivity extends Activity {
 	Context context;
 	Cursor cSurahs;
 	SurahAdapter surahsAdapter;
-	int lang, trans;
+	int lang, trans=14;
 	ArrayList<SurahModel> surahList;
 
 	@Override
@@ -107,11 +107,11 @@ public class SurahsActivity extends Activity {
 	@Override
 	protected void onStart() {
 		super.onStart();
-		trans=14;
 		cSurahs = databaseH.getSurahs(trans);
 		surahsAdapter = new SurahAdapter(context, cSurahs);
 		listSurahs.setAdapter(surahsAdapter);
 		Log.d("QURAN", " surahs count = " + cSurahs.getCount() );
+		Log.d("QURAN", "trans = " + trans);
 	}
 
 	@Override

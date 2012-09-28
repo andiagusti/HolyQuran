@@ -62,7 +62,7 @@ public class MarkedActivity extends Activity {
 
 		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
 		txtTitle.setTypeface(fontEvo);
-		txtTitle.setText("Isarelenmisler");
+		txtTitle.setText("Nişanlanmışlar");
 
 		listItems = (ListView) findViewById(R.id.listItems);
 		c = databaseH.getMarkeds(trans);

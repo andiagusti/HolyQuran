@@ -92,7 +92,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/green_gradient"
                 android:layout_margin="0dp"
-                android:text="Evvelki Aye" />
+                android:text="Əvvəlki ayə" />
 
             <Button
                 android:id="@+id/btnNext"
@@ -102,7 +102,7 @@
                 android:layout_weight="1"
                 android:layout_margin="0dp"
                 android:background="@drawable/green_gradient"
-                android:text="Novbeti aye" />
+                android:text="Növbəti ayə" />
         </LinearLayout>
     </RelativeLayout>
 

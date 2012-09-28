@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 	SharedPreferences settings;
 	SharedPreferences.Editor editor;
 	Typeface fontEvo;
-	int lang, trans;
+	int lang, trans=14;
 	//String lang, trans;
 	boolean isFirstRun, saveLang, saveTrans, askLang;
 	String[][] strings = { { "Qurani Kərim", "Yadda saxla" },
@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main);
 		context = this;
 
-		//settings = getSharedPreferences("QuraniKerim", 0);
+		settings = getSharedPreferences("QuraniKerim", 0);
 		settings = PreferenceManager.getDefaultSharedPreferences(context);
 		
 		editor = settings.edit();
@@ -74,8 +74,8 @@ public class MainActivity extends Activity {
 		askLang = isFirstRun || !saveLang;
 		//lang = settings.getInt("lang", -1);
 		//trans = settings.getInt("trans", -1);
-		lang = Integer.valueOf(settings.getString("lang", "-1"));
-		trans = Integer.valueOf(settings.getString("trans", "-1"));
+		lang = Integer.valueOf(settings.getString("lang", "0"));
+		trans = settings.getInt("trans", 14);
 
 		fontEvo = Typeface.createFromAsset(getAssets(), "Evo.otf");
 
@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
 
 				Intent MainMenuIntent = new Intent(context,
 						MainMenuActivity.class);
-				MainMenuIntent.putExtra("trans", (int) id); // TODO un-fix 14
+				MainMenuIntent.putExtra("trans", trans); // TODO un-fix 14
 				MainMenuIntent.putExtra("lang", lang); // TODO un-fix 0
 				startActivity(MainMenuIntent);
 				finish();

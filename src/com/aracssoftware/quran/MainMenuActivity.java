@@ -105,8 +105,8 @@ public class MainMenuActivity extends Activity {
 
 		SharedPreferences prefs = PreferenceManager
 				.getDefaultSharedPreferences(context);
-		lang = Integer.valueOf(prefs.getString("lang", "0"));
-		trans = Integer.valueOf(prefs.getString("trans", "0"));
+		lang = getIntent().getIntExtra("lang", 0);
+		trans = getIntent().getIntExtra("trans", 0);
 
 		btnReadQuran.setText(strings[lang][0]);
 		btnNotes.setText(strings[lang][1]);

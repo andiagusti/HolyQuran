@@ -25,7 +25,8 @@
         <activity 
             android:name=".SurahsActivity"></activity>
         <activity android:name=".VersesActivity"></activity>
-        <activity android:name=".InitActivity"></activity>
+        <activity android:name=".InitActivity"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".DownloadActivity"></activity>
         <activity android:name=".AVerseActivity"></activity>
         <activity android:name=".NoteActivity"
