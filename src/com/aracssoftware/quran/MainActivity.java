@@ -75,7 +75,8 @@ public class MainActivity extends Activity {
 		//lang = settings.getInt("lang", -1);
 		//trans = settings.getInt("trans", -1);
 		lang = Integer.valueOf(settings.getString("lang", "0"));
-		trans = settings.getInt("trans", 14);
+		//trans = settings.getInt("trans", 14);
+		trans = Integer.valueOf(settings.getString("trans", "14"));
 
 		fontEvo = Typeface.createFromAsset(getAssets(), "Evo.otf");
 
