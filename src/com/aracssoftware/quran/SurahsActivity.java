@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -106,9 +107,11 @@ public class SurahsActivity extends Activity {
 	@Override
 	protected void onStart() {
 		super.onStart();
+		trans=14;
 		cSurahs = databaseH.getSurahs(trans);
 		surahsAdapter = new SurahAdapter(context, cSurahs);
 		listSurahs.setAdapter(surahsAdapter);
+		Log.d("QURAN", " surahs count = " + cSurahs.getCount() );
 	}
 
 	@Override
