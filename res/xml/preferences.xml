@@ -7,27 +7,27 @@
             android:entryValues="@array/listDillerVal"
             android:key="lang"
             android:summary="Proqram menyusunun dili"
-            android:title="Interfeys dili" />
+            android:title="İnterfeys dili" />
 
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="save_lang"
-            android:summary="Dil secimi yadda saxlanilsinmi?"
+            android:summary="Dil seçimi yadda saxlanılsın?"
             android:title="Yadda saxla" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Tercume dili" >
+    <PreferenceCategory android:title="Tərcümə dili" >
         <ListPreference
             android:defaultValue="14"
             android:entries="@array/listTercumeler"
             android:entryValues="@array/listTercumelerVal"
             android:key="trans"
-            android:summary="Quran tercumelerinden birini secin"
-            android:title="Tercume dili" />
+            android:summary="Quran tərcümələrindən birini seçin"
+            android:title="Tərcumə dili" />
 
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="save_trans"
-            android:summary="Tercume secimi yadda saxlanilsinmi?"
+            android:summary="Tərcümə dili yadda saxlanılsın?"
             android:title="Yadda saxla" />
     </PreferenceCategory>
 
