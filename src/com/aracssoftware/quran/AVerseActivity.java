@@ -77,13 +77,13 @@ public class AVerseActivity extends Activity {
 			verse = databaseH.getItem(trans, surahId, verseId);
 			surah = databaseH.getItem(trans, surahId, 0);
 			
-			Typeface fontMonotype = Typeface.createFromAsset(context.getAssets(), "Monotype.ttf");
+			
 			Typeface fontEvo = Typeface.createFromAsset(context.getAssets(), "Evo.otf");
 
 			TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
 			txtTitle.setTypeface(fontEvo);
 			TextView txtAztext = (TextView) findViewById(R.id.txtAztext);
-			txtAztext.setTypeface(fontMonotype);
+			txtAztext.setTypeface(fontEvo);
 			Button btnPrev = (Button) findViewById(R.id.btnPrev);
 			btnPrev.setTypeface(fontEvo);
 			Button btnNext = (Button) findViewById(R.id.btnNext);
@@ -178,8 +178,7 @@ public class AVerseActivity extends Activity {
 		case 3:
 			Intent intent = new Intent(Intent.ACTION_SEND);
 			intent.setType("text/plain");
-			intent.putExtra(Intent.EXTRA_TEXT, "Qurani Kerim, " + surahName + " : "+ String.valueOf(verseId)
-					+ " – \"" + verseText + "\"");
+			intent.putExtra(Intent.EXTRA_TEXT, ""+ String.valueOf(verse.text)+ " #HolyQuran #AracsCompany");
 			startActivity(Intent.createChooser(intent, "Paylaşım vasitəsi"));
 			return true;
 		}

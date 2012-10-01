@@ -30,9 +30,11 @@ public final class R {
         public static final int mark=0x7f02000a;
         public static final int note=0x7f02000b;
         public static final int orange_solid=0x7f02000c;
-        public static final int partpaste_rounded=0x7f02000d;
-        public static final int quran_icon=0x7f02000e;
-        public static final int ru=0x7f02000f;
+        public static final int paper=0x7f02000d;
+        public static final int partpaste_rounded=0x7f02000e;
+        public static final int quran_icon=0x7f02000f;
+        public static final int ru=0x7f020010;
+        public static final int splash_screen=0x7f020011;
     }
     public static final class id {
         public static final int btnAllSurahs=0x7f080022;
@@ -45,8 +47,8 @@ public final class R {
         public static final int btnPrev=0x7f080007;
         public static final int btnReadQuran=0x7f080019;
         public static final int btnSave=0x7f080020;
-        public static final int btnSearchQuran=0x7f08002c;
-        public static final int btnSearchSurah=0x7f080031;
+        public static final int btnSearchQuran=0x7f08002d;
+        public static final int btnSearchSurah=0x7f080032;
         public static final int btnSettings=0x7f08001b;
         public static final int checkSaveLang=0x7f080010;
         public static final int editNote=0x7f08001f;
@@ -54,10 +56,10 @@ public final class R {
         public static final int imageView1=0x7f08000d;
         public static final int imgFlagAz=0x7f080014;
         public static final int imgFlagRu=0x7f080017;
-        public static final int imgMark=0x7f08002a;
-        public static final int imgNote=0x7f08002b;
-        public static final int imgVerseMark=0x7f080034;
-        public static final int imgVerseNote=0x7f080035;
+        public static final int imgMark=0x7f08002b;
+        public static final int imgNote=0x7f08002c;
+        public static final int imgVerseMark=0x7f080035;
+        public static final int imgVerseNote=0x7f080036;
         public static final int linearBar=0x7f080002;
         public static final int linearBottom=0x7f08000f;
         public static final int linearContent=0x7f080001;
@@ -71,25 +73,26 @@ public final class R {
         public static final int linearNavigation=0x7f080006;
         public static final int linearTop=0x7f08000c;
         public static final int listItems=0x7f08001d;
-        public static final int listSurahs=0x7f08002d;
+        public static final int listSurahs=0x7f08002e;
         public static final int listTrans=0x7f080011;
-        public static final int listVerses=0x7f080032;
+        public static final int listVerses=0x7f080033;
         public static final int progressCirc=0x7f08000a;
-        public static final int relativeDownAll=0x7f08002e;
+        public static final int relativeDownAll=0x7f08002f;
         public static final int relativeNav=0x7f080005;
+        public static final int splash_text=0x7f080029;
         public static final int textAz=0x7f080015;
         public static final int textRu=0x7f080018;
         public static final int txtAppName=0x7f08000e;
-        public static final int txtAuthor=0x7f080030;
+        public static final int txtAuthor=0x7f080031;
         public static final int txtAztext=0x7f080004;
         public static final int txtId=0x7f080026;
         public static final int txtInitProgress=0x7f08000b;
-        public static final int txtLang=0x7f08002f;
+        public static final int txtLang=0x7f080030;
         public static final int txtNameOrText=0x7f080028;
-        public static final int txtNum=0x7f080033;
-        public static final int txtSurahName=0x7f080029;
+        public static final int txtNum=0x7f080034;
+        public static final int txtSurahName=0x7f08002a;
         public static final int txtTitle=0x7f080003;
-        public static final int txtVerseText=0x7f080036;
+        public static final int txtVerseText=0x7f080037;
     }
     public static final class layout {
         public static final int a_verse=0x7f030000;
@@ -102,11 +105,12 @@ public final class R {
         public static final int read_menu=0x7f030007;
         public static final int settings=0x7f030008;
         public static final int single_item=0x7f030009;
-        public static final int surah_list_item=0x7f03000a;
-        public static final int surahs=0x7f03000b;
-        public static final int trans_item=0x7f03000c;
-        public static final int verses=0x7f03000d;
-        public static final int verses_list_item=0x7f03000e;
+        public static final int splashscreen=0x7f03000a;
+        public static final int surah_list_item=0x7f03000b;
+        public static final int surahs=0x7f03000c;
+        public static final int trans_item=0x7f03000d;
+        public static final int verses=0x7f03000e;
+        public static final int verses_list_item=0x7f03000f;
     }
     public static final class string {
         public static final int app_name=0x7f050001;

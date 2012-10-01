@@ -53,6 +53,7 @@
             android:id="@+id/txtVerseText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="Verse az text fgkokg jidjidgji fjg ifjgfgfgufhfgujfhugh fujgfughfugh juhfuhfugh uhgfu"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
