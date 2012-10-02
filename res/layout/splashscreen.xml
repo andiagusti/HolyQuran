@@ -9,13 +9,14 @@
    android:layout_height="wrap_content"
    android:layout_centerVertical="true"
    android:layout_centerHorizontal="true"/>
+  
   <TextView android:id="@+id/splash_text" 
    android:layout_width="wrap_content" 
    android:gravity="center_horizontal" 
    android:layout_height="wrap_content" 
    android:textSize="18sp" 
    android:textColor="#000000" 
-   android:text="Version 1.5" 
+   android:text="Version 1.7" 
    android:layout_alignParentBottom="true"
    android:layout_centerHorizontal="true"
    android:layout_margin="10sp" />

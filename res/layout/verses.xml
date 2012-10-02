@@ -3,8 +3,7 @@
     android:id="@+id/linearLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="@drawable/paper" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/linearBar"
@@ -37,7 +36,9 @@
     <ListView
         android:id="@+id/listVerses"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:cacheColorHint="#00000000" >
     </ListView>
 
 </LinearLayout>

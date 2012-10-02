@@ -35,6 +35,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -71,7 +72,8 @@ public class SurahsActivity extends Activity {
 		context = this;
 		lang = getIntent().getIntExtra("lang", -1);
 		trans = getIntent().getIntExtra("trans", -1);
-
+		LinearLayout ll = (LinearLayout) findViewById(R.id.linearLayout1);
+		ll.setBackgroundColor(R.drawable.paper);
 		final Typeface fontEvo = Typeface.createFromAsset(getAssets(),
 				"Evo.otf");
 		TextView txtTitle = (TextView) findViewById(R.id.txtTitle);
