@@ -12,6 +12,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
-Big thanks to <a href="http://twitter.com/jTogrul">Togrul</a> for his contribution to this project.
